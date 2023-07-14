@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "./../assets/images/logo.png";
 import {
   HiHome,
@@ -11,6 +11,8 @@ import { HiPlus, HiDotsVertical } from "react-icons/hi";
 import HeaderItem from "./HeaderItem";
 
 function Header() {
+  const [toggle, setToggle] = useState(false)
+
   const menu = [
     {
       name: "HOME",
@@ -44,13 +46,33 @@ function Header() {
         <img
           src={logo}
           title="Diseny logo"
-          className="w-20 md:w-32 object-contain"
+          className="w-28 lg:w-32 object-contain"
         />
       </div>
-      <div>
-        <nav className="flex gap-3">
+      <div className="flex gap-4 items-center">
+        <nav className="hidden lg:flex gap-3">
             {menu.map((item) => <HeaderItem name={item.name} Icon={item.icon} />)}
         </nav>
+        <nav className="flex lg:hidden gap-3 relative">
+            {menu.map((item, index) => index<3 && <HeaderItem name={''} Icon={item.icon} />)}
+            <div className="lg:hidden" onClick={() => {
+              setToggle(!toggle)
+              setTimeout(() => {
+                setToggle(false);
+              }, 4000);
+            }}>
+              <HeaderItem name={''} Icon={HiDotsVertical} />
+            </div>
+            {toggle ? 
+              <div className="absolute top-10 right-6 border-2 py-1 pb-2 px-4 bg-[#00000020]">
+                {menu.map((item, index) => index>3 && <HeaderItem name={item.name} Icon={item.icon} />)}
+              </div>
+            : null}
+        </nav>
+        <div className="w-[40px] lg:hidden">
+          <img src="https://ps.w.org/user-avatar-reloaded/assets/icon-256x256.png?rev=2540745"
+          className='rounded-full'/>
+        </div>
       </div>
     </div>
   );
