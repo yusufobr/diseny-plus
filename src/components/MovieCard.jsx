@@ -8,10 +8,10 @@ function MovieCard({ movie }) {
   return (
     <div className="relative">
       <img
-        className="w-24 md:w-48 rounded-lg border-2 border-transparent hover:border-white cursor-pointer"
+        className="w-48 md:w-60 rounded-lg border-2 border-transparent hover:border-white cursor-pointer"
         src={IMG_BASE + movie.poster_path}
       />
-      <div className="absolute bottom-1 left-1 w-9 bg-black rounded-full">
+      <div className="absolute bottom-[4%] left-[4%] w-9 bg-black rounded-full">
         <CircularProgressbar
           value={movie.vote_average * 10}
           text={`${movie.vote_average * 10}%`}
