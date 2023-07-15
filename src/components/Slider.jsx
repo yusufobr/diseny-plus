@@ -39,7 +39,7 @@ function Slider() {
       {movieList.length === 0 ? (
         <SliderLoading />
       ) : (
-        <div className="max-w-screen-xl my-4 px-4 mx-auto drop-shadow-2xl">
+        <div className="max-w-screen-xl my-4 px-2 md:px-4 mx-auto drop-shadow-2xl">
           <Splide options={options} aria-label="My Favorite Images">
             {movieList.map((item) => (
               <SplideSlide>
