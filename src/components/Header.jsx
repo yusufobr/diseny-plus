@@ -50,7 +50,7 @@ function Header() {
         />
       </div>
       <div className="flex gap-4 items-center">
-        <nav className="hidden lg:flex gap-3">
+        <nav className="hidden lg:flex gap-3 mr-4">
             {menu.map((item) => <HeaderItem name={item.name} Icon={item.icon} />)}
         </nav>
         <nav className="flex lg:hidden gap-3 relative">
