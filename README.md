@@ -3,7 +3,6 @@
     <img width="250" src="./src/assets/images/disney.png" />
 </a>    
 </div>
-<br /><br />
 
 <!-- TABLE OF CONTENTS -->
 
