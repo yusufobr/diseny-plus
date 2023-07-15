@@ -64,7 +64,7 @@ function Header() {
               <HeaderItem name={''} Icon={HiDotsVertical} />
             </div>
             {toggle ? 
-              <div className="absolute top-10 right-6 border-2 py-1 pb-2 px-4 bg-[#00000020]">
+              <div className="absolute z-20 top-10 right-6 border-2 py-1 pb-2 px-4 bg-black">
                 {menu.map((item, index) => index>3 && <HeaderItem name={item.name} Icon={item.icon} />)}
               </div>
             : null}

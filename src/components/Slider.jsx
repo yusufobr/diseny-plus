@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-import getTrendingVideos from "../Services/GlobalApi";
+import {getTrendingVideos} from "../Services/GlobalApi";
 import "@splidejs/react-splide/css";
 
 const IMG_BASE = "https://image.tmdb.org/t/p/original";

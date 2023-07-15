@@ -41,12 +41,12 @@ function Categories() {
   ];
 
   return (
-    <div className="container mx-auto px-4 max-w-screen-xl">
+    <div className="container mx-auto px-6 max-w-screen-xl">
       <div className="flex justify-between gap-4">
         {categoriesList.map((item) => (
           <div
             key={item.id}
-            className="relative group border-2 border-transparent border-white border-opacity-20 hover:border-white shadow-xl shadow-gray-800 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer drop-shadow-xl"
+            className="relative group border-2 border-transparent border-white border-opacity-20 hover:border-opacity-100 shadow-xl shadow-gray-800 rounded-xl hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer drop-shadow-xl"
           >
             <video
               autoPlay
