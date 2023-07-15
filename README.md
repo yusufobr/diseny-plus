@@ -27,13 +27,20 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Crypto Coin <a name="about-project"></a>
+# 📖 Diseny 2.0 Clone <a name="about-project"></a>
 
-**Crypto Coin** is a project of creating a responsive web app using React, Redux, Tailwindcss, Rechart library and Behance design to design the layout.
+**Diseny 2.0 Clone** is a project of creating Disney+ clone with React js, Tailwind css, Vite
+
+<br>
 
 Screenshot :
 
-<img width="500" src="./src/components/assets/crypto.gif" />
+<p align="center"> 
+<img src="./public/diseny%2B.PNG" />
+</p>
+
+<br>
+<hr>
 
 ## 🛠 Built With <a name="built-with"></a>
 
